@@ -1,0 +1,75 @@
+.activitySection {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.activitySection .heading {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activitySection .heading h1 {
+  font-size: h2;
+  color: black;
+  font-weight: 700;
+}
+
+.activitySection .heading .btn {
+  border: 1px solid transparent;
+}
+
+.activitySection .heading .btn:hover {
+  border: 1px solid green;
+}
+
+.activitySection .seeContainer {
+  margin-top: 1rem;
+}
+
+.activitySection .singleCustomer {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activitySection .singleCustomer img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px grey;
+          box-shadow: 0 2px 4px grey;
+  margin-right: 1rem;
+}
+
+.activitySection .singleCustomer .customerDetails {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.activitySection .singleCustomer .customerDetails .name {
+  font-size: h3;
+  font-weight: 600;
+  color: black;
+  display: block;
+}
+
+.activitySection .singleCustomer .customerDetails small {
+  font-weight: 500;
+  color: red;
+  font-size: small;
+}
+
+.activitySection .singleCustomer .duration {
+  color: black;
+  font-weight: 500;
+  font-size: small;
+}
+/*# sourceMappingURL=Activity.css.map */

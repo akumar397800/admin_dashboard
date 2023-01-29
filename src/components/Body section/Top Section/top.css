@@ -1,0 +1,237 @@
+.topSection .headerSection {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topSection .headerSection .title h1 {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+.topSection .headerSection .title p {
+  font-size: 18px;
+  color: red;
+  font-weight: 500;
+}
+
+.topSection .headerSection .searchBar {
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 5px;
+  gap: 1rem;
+  -webkit-box-shadow: 0 2px 4px blue;
+          box-shadow: 0 2px 4px blue;
+}
+
+.topSection .headerSection .searchBar input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.topSection .headerSection .searchBar .icon {
+  color: rebeccapurple;
+}
+
+.topSection .headerSection .searchBar .icon:hover {
+  color: green;
+}
+
+.topSection .headerSection .adminDiv {
+  gap: 1rem;
+}
+
+.topSection .headerSection .adminDiv .icon {
+  font-size: 50px;
+  background: white;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-box-shadow: 0 2px 4px red;
+          box-shadow: 0 2px 4px red;
+  color: red;
+}
+
+.topSection .headerSection .adminDiv .adminImage {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 2.5rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 4px red;
+          box-shadow: 0 2px 4px red;
+}
+
+.topSection .headerSection .adminDiv .adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.topSection .cardSection {
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.topSection .cardSection .rightCard {
+  position: relative;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  height: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.topSection .cardSection .rightCard .hh, .topSection .cardSection .rightCard .btn {
+  z-index: 100;
+}
+
+.topSection .cardSection .rightCard .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.topSection .cardSection .rightCard .videoDiv video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topSection .cardSection .rightCard h1 {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.topSection .cardSection .rightCard p {
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.topSection .cardSection .rightCard .buttons {
+  gap: 1rem;
+}
+
+.topSection .cardSection .rightCard .buttons .btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: .8rem 1.5rem;
+  color: palegreen;
+  border: 1px solid palegreen;
+}
+
+.topSection .cardSection .rightCard .buttons .transparent {
+  background: none;
+  border: 2px solid palegreen;
+  color: palegreen;
+}
+
+.topSection .cardSection .rightCard .buttons .transparent:hover {
+  background: palegreen;
+  color: green;
+}
+
+.topSection .cardSection .leftCard {
+  -ms-flex-preferred-size: 1%;
+      flex-basis: 1%;
+}
+
+.topSection .cardSection .leftCard .main {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  border-radius: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topSection .cardSection .leftCard .main::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: palegreen;
+  left: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+.topSection .cardSection .leftCard .main .textDiv {
+  z-index: 100;
+}
+
+.topSection .cardSection .leftCard .main .textDiv h1 {
+  font-size: h1;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.topSection .cardSection .leftCard .main .textDiv .flex {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.topSection .cardSection .leftCard .main .textDiv .flex small {
+  font-size: 18px;
+  display: block;
+  color: green;
+  font-weight: 500;
+  padding: .5rem 0;
+}
+
+.topSection .cardSection .leftCard .main .textDiv .link {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.topSection .cardSection .leftCard .main .textDiv .link:hover {
+  color: green;
+}
+
+.topSection .cardSection .leftCard .main .textDiv .link:hover .icon {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.topSection .cardSection .leftCard .main .imgDiv {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  width: 50px;
+  height: 40px;
+}
+
+@media screen and (max-width: 990px) {
+  .cardSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cardSection .rightCard, .cardSection .leftCard {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+/*# sourceMappingURL=Top.css.map */

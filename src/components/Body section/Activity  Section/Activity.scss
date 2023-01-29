@@ -1,0 +1,65 @@
+.activitySection{
+    flex-basis: 50%;
+
+    .heading{
+        width: 100%;
+        justify-content: space-between;
+
+        h1{
+            font-size: h2;
+            color: black;
+            font-weight: 700;
+        }
+
+        .btn{
+            border: 1px solid transparent;
+
+        }
+        .btn:hover{
+            border: 1px solid green;
+        }
+
+    }
+    .seeContainer{
+        margin-top: 1rem;
+
+    }
+
+    .singleCustomer{
+        align-items: flex-start;
+        justify-content: space-between;
+
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px grey;
+            margin-right: 1rem;
+
+        }
+
+        .customerDetails{
+            flex: 1;
+
+            .name{
+                font-size: h3;
+                font-weight: 600;
+                color: black;
+                display: block;
+            }
+
+            small{
+                font-weight: 500;
+                color: red;
+                font-size: small;
+            }
+        }
+
+        .duration{
+            color: black;
+            font-weight: 500;
+            font-size: small;
+        }
+    }
+}

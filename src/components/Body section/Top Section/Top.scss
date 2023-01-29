@@ -1,0 +1,235 @@
+.topSection{
+    .headerSection{
+        justify-content: space-between; 
+
+    .title{
+        h1{
+            font-size: 25px;
+            color: black;
+            font-weight: 500;
+        }
+    
+        p{
+            font-size: 18px;
+            color: red;
+            font-weight: 500;
+        }
+    }
+
+    .searchBar{
+        padding: 1rem 2rem;
+        background: white;
+        border-radius: 5px;
+        gap: 1rem;
+        box-shadow: 0 2px 4px blue;
+
+        input{
+            border: none;
+            outline: none;
+            background: none;
+
+        }
+        .icon{
+            color:rebeccapurple;
+            &:hover{
+                color: green;
+
+            }
+        }
+    
+    }
+
+    .adminDiv{
+        gap: 1rem;
+        .icon{
+            font-size: 50px;
+            background: white;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 2px 4px red;
+            color: red;
+
+        }
+
+        .adminImage{
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 2.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px red;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+
+            }
+        }
+        
+    }
+    }
+
+    .cardSection{
+        margin-top: 3rem;
+        gap: 1rem;
+
+        .rightCard{
+            position: relative;
+            flex-basis: 70%;
+            height: 200px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin: auto;
+            padding: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            
+            .hh,.btn{
+                z-index: 100;
+            }
+
+            .videoDiv{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+
+                video{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+            }
+
+           
+            h1{
+                font-size: 15px;
+                //color: red;
+                font-weight: 800;
+                }
+            p{
+                padding: 1rem;
+                //color: green;
+                font-weight: 500;
+            }
+
+            .buttons{
+                gap: 1rem;
+
+                .btn{
+                    box-shadow: none;
+                    padding: .8rem 1.5rem;
+                    color: palegreen;
+                    border: 1px solid palegreen;
+                }
+
+                .transparent{
+                    background: none;
+                    border: 2px solid palegreen;
+                    color: palegreen;
+
+                    &:hover{
+                        background: palegreen;
+                        color:green;
+                    }
+                }
+            }
+            
+        }
+
+        .leftCard{
+            flex-basis: 1%;
+
+            .main{
+                position: relative;
+                padding: 1rem;
+                height: 200px;
+                border-radius: 1rem;
+                justify-content: space-between;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: palegreen;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 1rem;
+
+                }
+
+                .textDiv{
+                     z-index: 100;
+
+                    h1{
+                        font-size: h1;
+                        padding-bottom: 1rem;
+                        color: black;
+
+                    }
+
+                    .flex{
+                        gap: 1.5rem;
+                        font-weight: 500;
+                        color: black;
+
+                        small{
+                            font-size: 18px;
+                            display: block;
+                            color: green;
+                            font-weight: 500;
+                            padding: .5rem 0;
+                        }
+
+                    }
+
+                    .link{
+                        margin-top: 2rem;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: green;
+                            .icon{
+                                transform: translateX(-10px);
+                                transition: .3s ease;
+
+                            }
+                        }
+                    }
+                }
+
+                .imgDiv{
+                    transform: translateY(-20px);
+
+                    // box-shadow:1rem red;
+                        width: 50px;
+                        height: 40px;
+                   
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+// MEDIA QUERIES
+@media screen and(max-width:990px) {
+    .cardSection{
+        flex-direction: column;
+
+        .rightCard,.leftCard{
+            width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}
