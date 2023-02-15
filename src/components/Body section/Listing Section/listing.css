@@ -64,7 +64,13 @@
 }
 
 .listingSection .seeContainer .singleItem img {
-  max-width: 100px;
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 2px solid grey;
+  transition: .5s ease;
 }
 
 .listingSection .seeContainer .singleItem .icon {

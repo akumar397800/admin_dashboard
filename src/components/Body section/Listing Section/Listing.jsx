@@ -1,6 +1,19 @@
 import React from 'react'
 import './listing.css'
-import img from '../../../Assets/sign.jpg'
+
+
+
+import imgs1 from '../../../Assets/prod1.jpg'
+import imgs2 from '../../../Assets/prod2.jpg'
+import imgs3 from '../../../Assets/prod3.jpg'
+import imgs4 from '../../../Assets/prod4.jpg'
+
+
+import img1 from '../../../Assets/user7.jpeg'
+import img2 from '../../../Assets/user8.jpg'
+import img3 from '../../../Assets/user9.jpg'
+import img4 from '../../../Assets/user10.jpg'
+
 
 import {BsArrowRightShort} from 'react-icons/bs'
 import {AiFillHeart} from 'react-icons/ai'
@@ -19,23 +32,23 @@ const Listing = () => {
       <div className='seeContainer flex'>
         <div className='singleItem'>
           <AiFillHeart className='icon'/>
-          <img src={img} alt="Image Name" />
+          <img src={imgs1} alt="Image Name" />
           <h3>Annual Vince</h3>
         </div>
         <div className='singleItem'>
           <AiFillHeart className='icon'/>
-          <img src={img} alt="Image Name" />
-          <h3>Annual Vince</h3>
+          <img src={imgs2} alt="Image Name" />
+          <h3>Himbaku</h3>
         </div>
         <div className='singleItem'>
           <AiFillHeart className='icon'/>
-          <img src={img} alt="Image Name" />
-          <h3>Annual Vince</h3>
+          <img src={imgs3} alt="Image Name" />
+          <h3>Kukuntanu</h3>
         </div>
         <div className='singleItem'>
           <AiFillHeart className='icon'/>
-          <img src={img} alt="Image Name" />
-          <h3>Annual Vince</h3>
+          <img src={imgs4} alt="Image Name" />
+          <h3>Akara pierce</h3>
         </div>
       </div>
 
@@ -51,10 +64,10 @@ const Listing = () => {
 
             <div className="card flex">
               <div className='users'>
-                <img src={img} alt="" />
-                <img src={img} alt="" />
-                <img src={img} alt="" />
-                <img src={img} alt="" />
+                <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                <img src={img3} alt="" />
+                <img src={img4} alt="" />
               </div>
               <div className="cardText">
                 <span>
@@ -77,10 +90,10 @@ const Listing = () => {
 
             <div className="card flex">
               <div className='users'>
-                <img src={img} alt="" />
-                <img src={img} alt="" />
-                <img src={img} alt="" />
-                <img src={img} alt="" />
+                <img src={img1} alt="" />
+                <img src={img2} alt="" />
+                <img src={img3} alt="" />
+                <img src={img4} alt="" />
               </div>
               <div className="cardText">
                 <span>
